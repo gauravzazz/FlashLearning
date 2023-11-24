@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for the flip effect and perspective */
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .transform-style {
+    transform-style: preserve-3d;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Ensures the back face is hidden when not flipped */
+  div {
+    backface-visibility: hidden;
+  }
+
+  .timeline-card {
+    margin-bottom: 20px; /* Adjust this value as needed */
+  }
+  
+  /* If you want to handle the last card differently */
+  .timeline-card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline {
+    border: 1px solid #ccc;
+    background-color: #f0f4f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  /* Add this to your existing CSS */
+.text-center {
+  text-align: center;
+}
+
+/* Ensure text wraps and is vertically centered */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.bg-color-1 {
+  background-color: #fde68a; /* Example color */
+}
+.bg-color-2 {
+  background-color: #fca5a5; /* Example color */
+}
+.bg-color-3 {
+  background-color: #a78bfa; /* Example color */
+}
+.bg-color-4 {
+  background-color: #6ee7b7; /* Example color */
+}
+/* ... more color classes as needed */
+
+  /* Add any additional global styles as needed */
+  
+  
